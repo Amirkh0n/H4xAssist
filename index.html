@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>AI Terminal Chat</title>
     
     <link rel="stylesheet" href="styles/style.css">
@@ -10,7 +11,11 @@
     <script src="https://js.puter.com/v2/"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
-
+    
+    <link rel="manifest" href="scripts/manifest.json">
+    <meta name="theme-color" content="#00ff00">
+    
+    
 </head>
 <body>
     <canvas class="matrix-bg"></canvas>
@@ -91,5 +96,13 @@
     </div>
 
 <script src="scripts/app.js"></script>
+    
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("scripts/service-worker.js")
+          .then(() => console.log("Service Worker ro'yxatdan o'tdi"))
+          .catch(err => console.error("SW xato:", err));
+      }
+    </script>
 </body>
 </html>
