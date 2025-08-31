@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
     
-    <link rel="manifest" href="scripts/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#00ff00">
     
     
@@ -99,7 +99,7 @@
     
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("scripts/service-worker.js")
+        navigator.serviceWorker.register("service-worker.js")
           .then(() => console.log("Service Worker ro'yxatdan o'tdi"))
           .catch(err => console.error("SW xato:", err));
       }
