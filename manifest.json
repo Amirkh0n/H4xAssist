@@ -2,7 +2,7 @@
   "name": "H4x Assist",
   "short_name": "H4x",
   "start_url": "/H4xAssist/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00ff00",
   "icons": [

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>AI Terminal Chat</title>
+    <title>H4x Assist Chat</title>
     
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"
     <script src="https://js.puter.com/v2/"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
@@ -100,8 +101,8 @@
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js")
-          .then(() => console.log("Service Worker ro'yxatdan o'tdi"))
-          .catch(err => console.error("SW xato:", err));
+          .then(() => alert("Service Worker ro'yxatdan o'tdi"))
+          .catch(err => alert( err));
       }
     </script>
 </body>
