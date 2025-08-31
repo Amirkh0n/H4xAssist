@@ -101,8 +101,8 @@
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js")
-          .then(() => alert("Service Worker ro'yxatdan o'tdi"))
-          .catch(err => alert( err));
+          .then(() => console.log("Service Worker ro'yxatdan o'tdi"))
+          .catch(err => console.error("SW da xatolik:", err));
       }
     </script>
 </body>
