@@ -3,13 +3,13 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("app-cache-v1").then((cache) => {
       return cache.addAll([
-        "/",              // index.html
-        "/index.html",
-        "/style.css",
-        "/app.js",
-        "/icon-192.png",
-        "/icon-512.png"
-      ]);
+          "/H4xAssist/",
+          "/H4xAssist/index.html",
+          "/H4xAssist/styles/style.css",
+          "/H4xAssist/scripts/app.js",
+          "/H4xAssist/images/H4x-192.png",
+          "/H4xAssist/images/H4x-512.png"
+        ]);
     })
   );
 });
